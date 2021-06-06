@@ -1,0 +1,109 @@
+{
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.purecode.cn/dongpo/screeneditor"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.2"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "@purecode/screeneditor",
+  "author": "slobber",
+  "module": "dist/screen-editor.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/screen-editor.cjs.production.min.js",
+      "limit": "10 MB"
+    },
+    {
+      "path": "dist/screen-editor.esm.js",
+      "limit": "10 MB"
+    }
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.14.2",
+    "@size-limit/preset-small-lib": "^4.10.2",
+    "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-info": "^5.3.21",
+    "@storybook/addon-links": "^6.2.9",
+    "@storybook/addons": "^6.2.9",
+    "@storybook/preset-ant-design": "^0.0.2",
+    "@storybook/react": "^6.2.9",
+    "@types/classnames": "^2.3.1",
+    "@types/lodash.debounce": "^4.0.6",
+    "@types/react": "^17.0.5",
+    "@types/react-color": "^3.0.4",
+    "@types/react-dom": "^17.0.5",
+    "babel-loader": "^8.2.2",
+    "husky": "^6.0.0",
+    "less": "^4.1.1",
+    "postcss": "^8.2.15",
+    "postcss-modules": "^4.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-is": "^17.0.2",
+    "rollup-plugin-postcss": "^4.0.0",
+    "size-limit": "^4.10.2",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "@craftjs/core": "^0.1.0-beta.19",
+    "@craftjs/layers": "^0.1.0-beta.19",
+    "@fortawesome/fontawesome-svg-core": "^1.2.33-beta1",
+    "@fortawesome/pro-duotone-svg-icons": "^6.0.0-beta1",
+    "@fortawesome/pro-light-svg-icons": "^6.0.0-beta1",
+    "@fortawesome/pro-solid-svg-icons": "^6.0.0-beta1",
+    "@fortawesome/pro-regular-svg-icons": "^6.0.0-beta1",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "antd": "^4.16.1",
+    "axios": "^0.21.1",
+    "classnames": "^2.3.1",
+    "csv-parse": "^4.15.4",
+    "dayjs": "^1.10.5",
+    "echarts": "^5.1.1",
+    "echarts-for-react": "^3.0.1",
+    "html-to-image": "^1.6.2",
+    "jwt-decode": "^3.1.2",
+    "lodash.debounce": "^4.0.8",
+    "re-resizable": "^6.9.0",
+    "react": "^17.0.2",
+    "react-color": "^2.19.3",
+    "react-contenteditable": "^3.3.5",
+    "react-contexify": "^5.0.0",
+    "react-cool-onclickoutside": "^1.6.1",
+    "react-dnd": "^14.0.2",
+    "react-dnd-html5-backend": "^14.0.0",
+    "react-dom": "^17.0.2",
+    "react-image-crop": "^8.6.9",
+    "react-scripts-ts": "3.1.0"
+  }
+}
