@@ -40,7 +40,7 @@ export default [
         title: '柱状图',
         components: [
           {
-            name: 'general-bar-chart',
+            name: 'GeneralBarChart',
             title: '柱状图',
             icon: '/assets/general-bar-chart.png',
           },
