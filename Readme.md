@@ -35,13 +35,13 @@
 │  ├─arcgis     ArcGis
 │  ├─bar        柱图
 │  ├─container  容器
-│  ├─control    
-│  ├─indicator
-│  ├─line
-│  ├─media
-│  ├─pie
-│  ├─table
-│  └─text
+│  ├─control    交互控件
+│  ├─indicator  指标
+│  ├─line       线图
+│  ├─media      媒体
+│  ├─pie        饼图
+│  ├─table      表格
+│  └─text       文本
 ├─components    底层组件，用于设置项和页面元素
 ├─designer      设计器中的各个组件
 ├─editor        右侧设置项的容器组件
