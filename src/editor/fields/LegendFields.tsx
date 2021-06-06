@@ -1,7 +1,6 @@
 import React from 'react';
 import { Col, Radio, Row, Switch } from 'antd';
-import NumberWithUnitInput from '../components/NumberWithUnitInput';
-import { FormItem } from '../components';
+import { FormItem, NumberWithUnitInput } from '../../components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const LegendFields = (props: any) => {

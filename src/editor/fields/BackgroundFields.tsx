@@ -2,11 +2,10 @@ import React from 'react';
 import { message, Select, Upload } from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { CSSProperties, useContext, useEffect, useState } from 'react';
-import { FormItem } from '../components';
-import ColorPicker from '../components/ColorPicker';
-import { ApiConfigContext } from '../ApiConfigContext';
+import { FormItem, ColorPicker } from '../../components';
+import { ApiConfigContext } from '../../ApiConfigContext';
 import { HttpRequestHeader } from 'antd/lib/upload/interface';
-import { BackgroundSettings } from '../declare';
+import { BackgroundSettings } from '../../declare';
 
 
 const previewStyle: CSSProperties = {

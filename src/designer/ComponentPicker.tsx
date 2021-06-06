@@ -20,7 +20,7 @@ type MenuItemGroupProps = {
 };
 
 const renderMenuItem = ({ name, title, connectors }: MenuItemProps) => {
-  if(!charts[name]) {
+  if(!charts[name] || !charts[name].craft) {
     return null;
   }
   return (

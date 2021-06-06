@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Col, Input, InputNumber, Row, Select, Switch } from 'antd';
-import { FormItem } from '../components';
+import { FormItem } from '../../components';
 
 export const DataSourceFields = (props: any) => {
   const { name, value, onChange, size } = props;

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button, Col, Input, Row, Switch } from 'antd';
-import { FormItem } from '../components';
-import ColorPicker from '../components/ColorPicker';
+import { FormItem, ColorPicker } from '../../components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const defaultSeriesColors = [
@@ -43,7 +42,7 @@ export const SeriesFields = (props: any) => {
         {
           name: '',
           backgroundColor: null,
-          showBackground: false,          
+          showBackground: false,
           color: defaultSeriesColors[value.length % defaultSeriesColors.length],
         },
       ],
@@ -120,7 +119,7 @@ export const SeriesFields = (props: any) => {
                     <ColorPicker size={size} />
                   </FormItem>
                 </Col>
-              )}              
+              )}
             </Row>
           </React.Fragment>
         ))}

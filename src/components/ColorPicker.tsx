@@ -12,7 +12,7 @@ export interface ColorPickerProps {
   size: SizeType;
 }
 
-const ColorPicker = ({ onChange, value, size }: Partial<ColorPickerProps>) => {
+export const ColorPicker = ({ onChange, value, size }: Partial<ColorPickerProps>) => {
   const [displayColorPicker, setDisplayColorPicker] = useState(false);
   const [internalValue, setInternalValue] = useState('#ffffff');
 
@@ -124,4 +124,3 @@ const ColorPicker = ({ onChange, value, size }: Partial<ColorPickerProps>) => {
     />
   );
 };
-export default ColorPicker;

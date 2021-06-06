@@ -1,6 +1,6 @@
 export * from './components';
 export * from './editor';
-export * from './settingFields';
+export * from './editor/fields';
 export * from './charts';
 export * from './designer';
 export * from './ScreenEditor';

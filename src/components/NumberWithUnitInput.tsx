@@ -15,7 +15,7 @@ const defaultUnitOptions = [
   { label: 'rem', value: 'rem' },
 ];
 
-const NumberWithUnitInput = ({
+export const NumberWithUnitInput = ({
   value,
   onChange,
   unitOptions = defaultUnitOptions,
@@ -79,4 +79,3 @@ const NumberWithUnitInput = ({
     </Input.Group>
   );
 };
-export default NumberWithUnitInput;

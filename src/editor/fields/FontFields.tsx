@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Radio, Row, Slider } from 'antd';
-import { FormItem } from '../components';
+import { FormItem, ColorPicker } from '../../components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import ColorPicker from '../components/ColorPicker';
-import { FontSettings } from '../declare';
+import { FontSettings } from '../../declare';
 
 export const FontFields = (props: any) => {
   const { name, label, value, onChange, size } = props;

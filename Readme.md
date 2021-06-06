@@ -1,5 +1,7 @@
 # Screen Editor
 
+**正在慢慢写，欢迎添加图表，也希望有人能帮助做做图标什么的**
+
 一个大屏设计前端组件，主要使用到以下技术：
 
 * React
@@ -24,3 +26,26 @@
 
 # 截图
 ![截图](./assets/screenshot.png)
+
+# 文件结构
+
+```
+├─charts        各种图表
+│  ├─amap       高德
+│  ├─arcgis     ArcGis
+│  ├─bar        柱图
+│  ├─container  容器
+│  ├─control    
+│  ├─indicator
+│  ├─line
+│  ├─media
+│  ├─pie
+│  ├─table
+│  └─text
+├─components    底层组件，用于设置项和页面元素
+├─designer      设计器中的各个组件
+├─editor        右侧设置项的容器组件
+│  └─fields     成组的设置项，如位置、边距、图例等待
+├─hooks         一些 Hook
+└─utils
+```

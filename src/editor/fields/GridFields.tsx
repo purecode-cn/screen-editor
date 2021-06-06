@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Col, InputNumber, Radio, Row, Slider, Switch } from 'antd';
-import { FormItem } from '../components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import ColorPicker from '../components/ColorPicker';
+import { FormItem, ColorPicker } from '../../components';
 
 export const GridFields = (props: any) => {
   const { name, value, onChange, size } = props;

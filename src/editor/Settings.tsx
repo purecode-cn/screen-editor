@@ -2,8 +2,7 @@ import React from 'react';
 import { useNode } from '@craftjs/core';
 import { Checkbox, Input, InputNumber, Radio, Select, Switch } from 'antd';
 
-import { FormItem } from '../components';
-import NumberWithUnitInput from '../components/NumberWithUnitInput';
+import { FormItem, NumberWithUnitInput, ColorPicker } from '../components';
 import {
   BackgroundFields,
   BoundFields,
@@ -13,8 +12,7 @@ import {
   SeriesFields,
   MarginFields,
   LegendFields,
-} from '../settingFields';
-import ColorPicker from '../components/ColorPicker';
+} from './fields';
 
 export const Settings: React.FC<any> = ({ info }) => {
   const {
@@ -238,12 +236,14 @@ export const SettingItem: React.FC<any> = ({
         </FormItem>
       );
     case 'margin':
-      return <MarginFields
-        name={name}
-        label={label}
-        value={value}
-        onChange={(v, n) => setValue(n, v)}
-      />;
+      return (
+        <MarginFields
+          name={name}
+          label={label}
+          value={value}
+          onChange={(v, n) => setValue(n, v)}
+        />
+      );
     case 'legend':
       return (
         <LegendFields

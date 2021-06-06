@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Row } from 'antd';
-import NumberWithUnitInput from '../components/NumberWithUnitInput';
-import { FormItem } from '../components';
+import { NumberWithUnitInput } from '../../components';
+import { FormItem } from '../../components';
 
 export const BoundFields = (props: any) => {
   const {

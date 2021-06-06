@@ -10,7 +10,7 @@ import {
   BoundFields,
   DataSourceFields,
   FontFields,
-} from '../src/settingFields';
+} from '../src/editor/fields';
 import { useEffect } from '@storybook/client-api';
 import { ApiConfigContext, defaultValue } from '../src/ApiConfigContext';
 
