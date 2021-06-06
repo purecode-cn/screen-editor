@@ -21,3 +21,6 @@
 > yarn storybook
 ```
 在打开的浏览器中查看 storybook 的各个实例。
+
+# 截图
+![截图](./assets/screenshot.png)
